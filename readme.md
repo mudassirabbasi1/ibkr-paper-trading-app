@@ -1,48 +1,37 @@
-# 📈 IBKR Paper Trading App
+# IBKR Paper Trading App
 
-A Python application that connects to the **Interactive Brokers (IBKR) API** 
-to simulate paper trading — allowing users to practice trading strategies 
-without risking real money.
+A Python starter project for experimenting with Interactive Brokers paper-trading workflows. The app is designed for learning order placement, market data access, and automated trading logic without using real capital.
 
-## 🚀 Features
-- Connects to Interactive Brokers API (TWS/IB Gateway)
-- Place and manage paper trades programmatically
-- Real-time market data retrieval
-- Practice trading strategies in a risk-free environment
+## Features
 
-## 🛠️ Tech Stack
-- **Language:** Python
-- **API:** Interactive Brokers (IBKR) TWS API
-- **Libraries:** ib_insync / ibapi
+- Connects to Interactive Brokers TWS or IB Gateway.
+- Supports paper-trading workflows for strategy testing.
+- Provides a small Python entry point for extending trading logic.
+- Keeps dependencies minimal through `requirements.txt`.
 
-## ⚙️ Setup & Installation
+## Tech Stack
 
-1. Clone the repository
+- Python
+- Interactive Brokers API
+- `ib_insync` / `ibapi`
+
+## Prerequisites
+
+- Interactive Brokers account with paper trading enabled.
+- TWS or IB Gateway installed and running.
+- Python 3.10 or newer.
+
+## Run Locally
+
 ```bash
-   git clone https://github.com/mudassirabbasi1/ibkr-paper-trading-app.git
-   cd ibkr-paper-trading-app
+git clone https://github.com/mudassirabbasi1/ibkr-paper-trading-app.git
+cd ibkr-paper-trading-app
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
 ```
 
-2. Install dependencies
-```bash
-   pip install -r requirements.txt
-```
+## Disclaimer
 
-3. Make sure **TWS or IB Gateway** is running and paper trading is enabled
-
-4. Run the app
-```bash
-   python main.py
-```
-
-## 📌 Prerequisites
-- Interactive Brokers account (paper trading enabled)
-- TWS or IB Gateway installed and running
-- Python 3.x
-
-## 🤝 Contributing
-Pull requests are welcome! Feel free to open an issue for suggestions.
-
-## 📫 Contact
-**Mudassir Ahmed** — abbasimudasir2098@gmail.com  
-[GitHub](https://github.com/mudassirabbasi1)
+This project is for education and paper-trading experiments only. It is not financial advice and should not be used for live trading without proper testing, risk controls, and review.
